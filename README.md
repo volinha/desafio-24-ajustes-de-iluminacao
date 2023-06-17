@@ -7,10 +7,10 @@ Disponibilizado pela Rocketseat no [Figma](https://www.figma.com/community/file/
 ## Como testar?
 
 ```bash
-    > git clone https://github.com/volinha/desafio-24-ajustes-de-iluminacao
-    > cd desafio-24-ajustes-de-iluminacao
-    > pnpm install
-    > pnpm dev
+    git clone https://github.com/volinha/desafio-24-ajustes-de-iluminacao
+    cd desafio-24-ajustes-de-iluminacao
+    pnpm install
+    pnpm dev
 ```
 
 Acesse `http://localhost:5173` no seu navegador.
