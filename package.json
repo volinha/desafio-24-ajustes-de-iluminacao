@@ -1,7 +1,7 @@
 {
   "name": "bora-codar-24-ilumi",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "homepage": "https://volinha.github.io/desafio-24-ajustes-de-iluminacao/",
   "type": "module",
   "scripts": {
