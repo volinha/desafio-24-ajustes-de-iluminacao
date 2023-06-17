@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,7 +30,7 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   appearance: none;
-  background: #FFF;
+  background: #fff;
   height: 4px;
   border-radius: 9999px;
   position: relative;
@@ -39,7 +39,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
   -webkit-appearance: none;
   appearance: none;
-  background: #FFF;
+  background: #fff;
   height: 4px;
   border-radius: 9999px;
   position: relative;
@@ -48,13 +48,25 @@ input[type="range"]::-moz-range-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
+
   width: 15px;
   height: 15px;
+
   background-color: black;
   border: 1px solid white;
   border-radius: 9999px;
 
   margin: -6px 0px;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid white;
+  margin: -7px 0px;
+
+  transition: all ease-in-out 100ms;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -72,15 +84,16 @@ input[type="range"]::-moz-range-thumb {
 #hue-slider::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   appearance: none;
-  background: linear-gradient(to right, 
-  hsl(0, 100%, 50%),
-  hsl(60, 100%, 50%),
-  hsl(120, 100%, 50%),
-  hsl(180, 100%, 50%),
-  hsl(240, 100%, 50%),
-  hsl(300, 100%, 50%),
-  hsl(360, 100%, 50%)
-);
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
   height: 4px;
   border-radius: 9999px;
   position: relative;
@@ -89,15 +102,16 @@ input[type="range"]::-moz-range-thumb {
 #hue-slider::-moz-range-track {
   -webkit-appearance: none;
   appearance: none;
-  background: linear-gradient(to right, 
-  hsl(0, 100%, 50%),
-  hsl(60, 100%, 50%),
-  hsl(120, 100%, 50%),
-  hsl(180, 100%, 50%),
-  hsl(240, 100%, 50%),
-  hsl(300, 100%, 50%),
-  hsl(360, 100%, 50%)
-);
+  background: linear-gradient(
+    to right,
+    hsl(0, 100%, 50%),
+    hsl(60, 100%, 50%),
+    hsl(120, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(240, 100%, 50%),
+    hsl(300, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
   height: 4px;
   border-radius: 9999px;
   position: relative;
@@ -113,6 +127,18 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 9999px;
 
   margin: -6px 0px;
+
+  transition: all ease-in-out 100ms;
+}
+
+#hue-slider::-webkit-slider-thumb:active {
+  border: 2px solid white;
+  margin: -7px 0px;
+
+  width: 18px;
+  height: 18px;
+
+  transition: all ease-in-out 100ms;
 }
 
 #hue-slider::-moz-range-thumb {
@@ -126,3 +152,4 @@ input[type="range"]::-moz-range-thumb {
 
   margin: -6px 0px;
 }
+
